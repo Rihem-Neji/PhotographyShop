@@ -1,0 +1,176 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+.parent {
+  min-height: 100vh;
+}
+
+
+
+
+.mynav {
+  background-color: rgb(69, 69, 247);
+  padding: 10px 20px;
+}
+
+/* Logo */
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.logo img {
+  width: 70px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+
+/* Links */
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.links .nav-link {
+  color: white !important;
+  font-weight: 500;
+}
+
+.links .nav-link:hover {
+  color: rgb(190, 190, 255) !important;
+}
+
+
+
+#active {
+  color: white !important;
+}
+
+
+/* Search + Login */
+
+.right-side {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.right-side svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+  cursor: pointer;
+}
+
+
+
+
+.main-content {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.products-title {
+  color: #001f3f;
+}
+
+
+
+
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 30px auto;
+}
+
+.product-card {
+  width: 18rem;
+}
+
+.product-card img {
+  height: 200px;
+  object-fit: contain;
+}
+
+
+
+.shop-info {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f1f5f9;
+  border-radius: 10px;
+}
+
+
+
+
+.footer {
+  width: 100%;
+  background-color: #001f3f;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+
+
+@media (max-width: 991px) {
+
+  .links {
+    margin-top: 15px;
+    gap: 10px;
+  }
+
+  .right-side {
+    margin-top: 15px;
+    justify-content: center;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .mynav {
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  .logo img {
+    width: 50px;
+    height: 40px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
